@@ -37,7 +37,6 @@ label .btn{
     border: 2px solid rgba(70,200,73,255);
     overflow: visible;
     box-shadow:
-            0 0 30px 15px rgba(0, 0, 0, 0.384),
             0 0 20px 5px rgba(26,114,30,255) inset;
     animation: latir 2s cubic-bezier(0.215, 0.610, 0.355, 1) infinite;
     font-size: 200px;
@@ -132,19 +131,16 @@ label input[type="checkbox"]:checked ~ .btn:hover::after{
 }
 @keyframes latir{
     0%{
-        transform: scale(.99);
         box-shadow:
             0 0 20px 5px rgba(26,114,30,255) inset
             0px 0px 5px 5px rgba(70,200,73,.2);
     }
     30%{
-        transform: scale(1);
         box-shadow:
             0 0 20px 5px rgba(26,114,30,255) inset,
             0px 0px 5px 5px rgba(70,200,73,.2);
     }
     100%{
-        transform: scale(.99);
         box-shadow:
             0 0 20px 5px rgba(26,114,30,255) inset,
             0 0 10px 200px rgba(24, 24, 24, 0);
